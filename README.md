@@ -15,10 +15,12 @@ As react-native document wrote, we have two method to init a react-native projec
 ```bash
 # init a project with name TableViewTutorial
 react-native init TableViewTutorial
+
 # open the folder
 cd TableViewTutorial
 # open ios folder, in this tutorial the Android is not used
 cd ios
+
 # open xcodeproj. This command open xcode application and this project
 open TableViewTurorial.xcodeproj
 ```
@@ -26,7 +28,6 @@ open TableViewTurorial.xcodeproj
 Until here if you run your project, it install on simulator or your iphone and you can see the welcome message of react-native.
 
 Now install `react-native-tableview` as its [github](https://github.com/aksonov/react-native-tableview) documentation suggest.
-
 
 ```bash
 yarn add react-native-tableview
