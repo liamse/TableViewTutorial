@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center', // This makes widht of TableView set to zero
+    alignItems: 'center', // This makes width of TableView set to zero
     backgroundColor: '#F5FCFF',
   },
 });
