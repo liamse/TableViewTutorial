@@ -4,7 +4,6 @@ This is an iOS only react-native package which implemente iOS UITableView. For t
 
 - react-native@0.55.4
 - react-native-tableview@2.1.0
-- react-native-navigation@
 
 ## Step 0
 
