@@ -44,7 +44,7 @@ Link a react-native copy related library of package and set proper settings on x
 
 Create `Example1.js` file in `src` folder. I copy the content of it exactly from react-native-tableview [Example1](https://github.com/aksonov/react-native-tableview/blob/master/example/src/screens/Example1.js).
 
-Change `App.js` file as following code and refress app to **SEE NOTHING** instead of light blue screen.
+Change `App.js` file as following code and refress app to **SEE NOTHING**, only a light blue background.
 
 ```js
 import React, { Component } from 'react';
@@ -72,6 +72,4 @@ const styles = StyleSheet.create({
 });
 ```
 
-The problem is `alignItems: 'center'` in `container` folder. Omit it or change it to `stretch` solve the problem. I omit it.
-
-
+The problem is `alignItems: 'center'` in `container` folder. Omit it or change it to `stretch` solves the problem. I omit it.
