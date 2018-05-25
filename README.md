@@ -41,3 +41,37 @@ react-native link react-native-tableview
 Link a react-native copy related library of package and set proper settings on xcode to the package can work properly. After link the package you can find it under Library folder at xcode as `RNTableView.xcode`.
 
 ## Step 1
+
+Create `Example1.js` file in `src` folder. I copy the content of it exactly from react-native-tableview [Example1](https://github.com/aksonov/react-native-tableview/blob/master/example/src/screens/Example1.js).
+
+Change `App.js` file as following code and refress app to **SEE NOTHING** instead of light blue screen.
+
+```js
+import React, { Component } from 'react';
+import Example1 from './src/Example1'
+
+type Props = {};
+
+export default class App extends Component<Props> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Example1 />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center', // This makes widht of TableView set to zero
+    backgroundColor: '#F5FCFF',
+  },
+});
+```
+
+The problem is `alignItems: 'center'` in `container` folder. Omit it or change it to `stretch` solve the problem. I omit it.
+
+
