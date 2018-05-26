@@ -58,9 +58,7 @@ const Example1 = () => (
         onPress={event => console.log(event)}
     >
         <Section label="Section 1" arrow>
-            <Item value="1" detail="Detail1">
-                Item 1
-      </Item>
+            <Item value="1" detail="Detail1">Item 1</Item>
             <Item value="2">Item 2</Item>
             <Item>Item 3</Item>
         </Section>
