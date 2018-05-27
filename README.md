@@ -108,3 +108,16 @@ const styles = StyleSheet.create({
 ```
 
 The problem is `alignItems: 'center'` in `container` folder. Omit it or change it to `stretch` solves the problem. I omit it.
+
+## step 2
+
+Every `TableView` must have at least one `Section` component. As [@iRoachie](https://github.com/aksonov/react-native-tableview/issues/160) said `TableView` by itself doesn't render anything, you have to add a Section.
+
+```js
+<TableView>
+  <Section>
+  </Section>
+</TableView>
+```
+
+Until here you render a `TableView`.
